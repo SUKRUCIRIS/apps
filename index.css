@@ -34,6 +34,7 @@ body {
     background-color: #cbb9a8;
     font-family: monospace;
     color: #111;
+    font-size: large;
 }
 
 .active {
@@ -58,10 +59,33 @@ body {
     margin-right: auto;
 }
 
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 45%;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to bottom right, #a3907c, #cbb9a8, #ede4da);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
 @media screen and (max-width: 600px) {
 
     li,
     li.sp {
         float: none;
+    }
+
+    .card {
+        width: 300px;
     }
 }
